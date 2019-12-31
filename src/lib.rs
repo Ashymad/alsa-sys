@@ -1232,6 +1232,7 @@ extern "C" {
     pub fn snd_pcm_status_get_trigger_htstamp(obj: *const snd_pcm_status_t, ptr: *mut snd_htimestamp_t);
     pub fn snd_pcm_status_get_tstamp(obj: *const snd_pcm_status_t, ptr: *mut snd_timestamp_t);
     pub fn snd_pcm_status_get_htstamp(obj: *const snd_pcm_status_t, ptr: *mut snd_htimestamp_t);
+    pub fn snd_pcm_status_get_driver_htstamp(obj: *const snd_pcm_status_t, ptr: *mut snd_htimestamp_t);
     pub fn snd_pcm_status_get_audio_htstamp(obj: *const snd_pcm_status_t, ptr: *mut snd_htimestamp_t);
     pub fn snd_pcm_status_get_delay(obj: *const snd_pcm_status_t) -> snd_pcm_sframes_t;
     pub fn snd_pcm_status_get_avail(obj: *const snd_pcm_status_t) -> snd_pcm_uframes_t;
